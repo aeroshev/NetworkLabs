@@ -16,6 +16,7 @@ int main(int argc, char* argv[])
     int bytes_read;
 
     //Создание сокета с UDP протоколом
+    //0 - установка стандратного интерфейса UDP
     sock = socket(AF_INET, SOCK_DGRAM, 0);
     if (sock < 0)
     {
